@@ -1,0 +1,74 @@
+<h5>Power Component</h5>
+
+<form (submit) = "mySubmit()">
+  Initial Power Level <input type="text" name= "powerlevel" [(ngModel)]="powerlevel">
+<input type="submit" name="" value="Calculate Powers">
+</form>
+
+<div [ngStyle]="{
+  'width': '1000px',
+  'vertical-align':'top',
+  'margin':'20px' 
+  }" >
+  <app-human [ngStyle]="{
+  'display':'inline-block',
+  'width': '100px',
+  'vertical-align':'top',
+  'padding':'20px',
+  'border':'2px solid black',
+  'font-size':'10px' 
+  }" [mylevel] = "mypowerlevel"></app-human>
+  
+  <app-saiyan [ngStyle]="{
+  'display':'inline-block',
+  'width': '100px',
+  'vertical-align':'top',
+  'padding':'20px',
+  'border':'2px solid black',
+  'font-size':'10px' 
+  }" [mylevel] = "mypowerlevel"></app-saiyan>
+
+  <app-supersaiyan [ngStyle]="{
+  'display':'inline-block',
+  'width': '100px',
+  'vertical-align':'top',
+  'padding':'20px',
+  'border':'2px solid black',
+  'font-size':'10px' 
+  }" [mylevel] = "mypowerlevel"></app-supersaiyan>
+
+</div>
+
+<div [ngStyle]="{
+  'width': '1000px',
+  'vertical-align':'top',
+  'margin':'20px' 
+  }" >
+  <app-saiyantwo [ngStyle]="{
+  'display':'inline-block',
+  'width': '100px',
+  'vertical-align':'top',
+  'padding':'40px',
+  'border':'2px solid black',
+  'font-size':'10px'  
+  }" [mylevel] = "mypowerlevel"></app-saiyantwo>
+
+  <app-saiyanthree [ngStyle]="{
+  'display':'inline-block',
+  'width': '100px',
+  'vertical-align':'top',
+  'padding':'40px',
+  'border':'2px solid black',
+  'font-size':'10px' 
+  }" [mylevel] = "mypowerlevel"></app-saiyanthree>
+
+  <app-saiyanfour [ngStyle]="{
+  'display':'inline-block',
+  'width': '100px',
+  'vertical-align':'top',
+  'padding':'40px' ,
+  'border':'2px solid black',
+  'font-size':'10px'
+  }" [mylevel] = "mypowerlevel"></app-saiyanfour>
+
+</div>
